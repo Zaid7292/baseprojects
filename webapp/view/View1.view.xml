@@ -1,0 +1,38 @@
+<mvc:View controllerName="project1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <SplitApp id="SplitAppDemo" initialDetail="detail" initialMaster="master">
+                <detailPages>
+                    <Page id="detail" title="Detail 1" backgroundDesign= "Solid">
+                        <HBox justifyContent="Center" alignContent="Center" alignItems="Center">
+                            <Image class="sapUiSmallMargin" src="https://gambhoimart.com/wp-content/uploads/2023/09/PhotoRoom-20230907_145945.png" height="28rem" width="45rem"></Image>
+                        </HBox>
+                    </Page>
+                    <!-- <Page id="detail2" title="Detail 3 Page" backgroundDesign= "Solid" showNavButton="true" navButtonPress=".onPressDetailBack">
+                        <Label text="This is Detail Page3" />
+                        <Input/>
+                        <Label text="Label 2" />
+                        <Input/>
+                        <Label text="Label 3" />
+                        <Input/>
+                        <Label text="Label 4" />
+                        <Input/>
+                        <Label text="Label 5" />
+                        <Input/>
+                    </Page> -->
+                </detailPages>
+                <masterPages>
+                    <Page id="master" title="Master 1" backgroundDesign= "List">
+                        <List>
+                            <StandardListItem title="Item 1" type="Active" press=".onPressGoToMaster" />
+                            <StandardListItem title="Item 2" type="Active" press=".onPressGoToMaster" />
+                            <StandardListItem title="Item 3" type="Active" press=".onPressGoToMaster" />
+                        </List>
+                    </Page>
+                </masterPages>
+            </SplitApp>
+        </content>
+    </Page>
+</mvc:View>
